@@ -12,6 +12,7 @@ function api_meetings() {
 
     $.get("./api/meetings", function(data) {
         console.log("API request: /api/meetings");
+        console.log(data);
         $("#meetings-body").empty();
 
         data.forEach(function(element, i) {
@@ -42,6 +43,7 @@ function api_meetings() {
 
 function api_server() {
         console.log("API request: /api/server");
+        console.log(data);
         $.get("./api/server", function(data) {
             $("#text-server").html(data.server);
             $("#text-version").html(data.version);
