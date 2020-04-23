@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>BigBlueButton Monitoring</title>
+    <title>Visio CDG47 -  Monitoring</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -10,24 +10,24 @@
     <!-- Begin page content -->
     <main role="main" class="flex-shrink-0">
         <div class="container">
-            <h1 class="mt-5">BigBlueButton Monitoring</h1>
-            <noscript>Sorry, Javascript is needed for this page to work. Yeah it sucks.</noscript>
+            <h1 class="mt-5">Monitoring du système de visio</h1>
+            <noscript>Désolé, javascript est nécessaire pour le fonctionnement de cette page.</noscript>
 
-            <p class="lead">Quick overview of all current meetings on BigBlueButton</p>
+            <p class="lead">Aperçu rapide de toutes les réunions en cours sur BigBlueButton</p>
 
-            <p>BigBlueButton Server: <span id="text-server"></span></p>
-            <p>Last refresh: <span id="text-last-refresh"></span></p>
+            <p>Serveurr: <span id="text-server"></span></p>
+            <p>Dernière actualisation: <span id="text-last-refresh"></span></p>
 
             <table id="meetings" class="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">No. users</th>
-                        <th scope="col">Moderators</th>
-                        <th scope="col">Origin Server</th>
-                        <th scope="col">Origin Context</th>
-                        <th scope="col">Creation</th>
+                        <th scope="col">Nom de la salle</th>
+                        <th scope="col">Nombre d'utilisateurs</th>
+                        <th scope="col">Modérateurs</th>
+                        <th scope="col">Serveur</th>
+                        <th scope="col">Contexte</th>
+                        <th scope="col">Création</th>
                     </tr>
                 </thead>
                     <tbody id="meetings-body">
@@ -35,10 +35,10 @@
                     </tbody>
             </table>
 
-            <p><small>Automatically refreshes every 15 seconds.</small></p>
+            <p><small>Automatiquement rafraîchit toutes les 15 secondes.</small></p>
 
             <div class="loading-spinner spinner-border" role="status">
-                <span class="loading-spinner sr-only">Loading...</span>
+                <span class="loading-spinner sr-only">Chargement...</span>
             </div>
 
         </div>
